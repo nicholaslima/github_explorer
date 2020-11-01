@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiChevronRight  } from 'react-icons/fi';
 import { Container } from './styled';
+import { Link } from 'react-router-dom';
 
 const Dashboard:React.FC = () => {
     return(
@@ -31,7 +32,10 @@ const Dashboard:React.FC = () => {
                                 descrição do repo
                             </p>
                         </div>
-                        <FiChevronRight size={ 20 } color="#C9C9D4"></FiChevronRight>
+                        <Link to="/user">
+                             <FiChevronRight size={ 20 } color="#C9C9D4"></FiChevronRight>
+                        </Link>
+                        
                     </div>
                 </li>
                 
@@ -46,7 +50,9 @@ const Dashboard:React.FC = () => {
                                 descrição do repo
                             </p>
                         </div>
-                        <FiChevronRight size={ 20 } color="#C9C9D4"></FiChevronRight>
+                        <Link to="/user">
+                            <FiChevronRight size={ 20 } color="#C9C9D4"></FiChevronRight>
+                        </Link>
                     </div>
                 </li>
 
@@ -61,7 +67,9 @@ const Dashboard:React.FC = () => {
                                 descrição do repo
                             </p>
                         </div>
-                        <FiChevronRight size={ 20 } color="#C9C9D4"></FiChevronRight>
+                        <Link to="/user">
+                             <FiChevronRight size={ 20 } color="#C9C9D4"></FiChevronRight>
+                        </Link>
                     </div>
                 </li>
   
