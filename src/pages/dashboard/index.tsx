@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiArrowRight  } from 'react-icons/fi';
+import { FiChevronRight  } from 'react-icons/fi';
 import { Container } from './styled';
 
 const Dashboard:React.FC = () => {
@@ -19,10 +19,11 @@ const Dashboard:React.FC = () => {
             </header>
             </div>
             <ul className="list">
+
                 <li>
                     <div className="thumb"></div>
-                    <div>
-                        <div className="">
+                    <div className="detalhes">
+                        <div>
                             <p className="subtitulo">
                                 user1/repo
                             </p>
@@ -30,14 +31,14 @@ const Dashboard:React.FC = () => {
                                 descrição do repo
                             </p>
                         </div>
-                        <FiArrowRight size={ 20 }></FiArrowRight>
+                        <FiChevronRight size={ 20 } color="#C9C9D4"></FiChevronRight>
                     </div>
                 </li>
                 
                 <li>
                     <div className="thumb"></div>
-                    <div>
-                        <div className="">
+                    <div className="detalhes">
+                        <div>
                             <p className="subtitulo">
                                 user1/repo
                             </p>
@@ -45,14 +46,14 @@ const Dashboard:React.FC = () => {
                                 descrição do repo
                             </p>
                         </div>
-                        <FiArrowRight size={ 20 }></FiArrowRight>
+                        <FiChevronRight size={ 20 } color="#C9C9D4"></FiChevronRight>
                     </div>
                 </li>
 
                 <li>
                     <div className="thumb"></div>
-                    <div>
-                        <div className="">
+                    <div className="detalhes">
+                        <div>
                             <p className="subtitulo">
                                 user1/repo
                             </p>
@@ -60,9 +61,10 @@ const Dashboard:React.FC = () => {
                                 descrição do repo
                             </p>
                         </div>
-                        <FiArrowRight size={ 20 }></FiArrowRight>
+                        <FiChevronRight size={ 20 } color="#C9C9D4"></FiChevronRight>
                     </div>
                 </li>
+  
             </ul>
         </Container>
     )

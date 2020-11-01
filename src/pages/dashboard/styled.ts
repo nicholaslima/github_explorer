@@ -58,4 +58,47 @@ export const Container = styled.div`
         }
     }
 
+    .list{
+        width: 714px;
+         li{
+            background-color: #fff;
+            border-radius: 5px;
+            border-width: 0;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            padding: 14px;
+            margin-top: 16px;
+
+            .detalhes{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+            }
+         }
+    }
+
+    .subtitulo{
+        margin-bottom: 4px;
+        color: #3D3D4D;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .description{
+        color: #A8A8B3;
+        font-size: 16px;
+        
+    }
+
+    .thumb{
+        border-radius: 50%;
+        width: 64px;
+        background-color: #C9C9D4;
+        margin-right: 22px;
+    }
+
 `;
