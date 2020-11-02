@@ -102,3 +102,13 @@ export const Container = styled.div`
     }
 
 `;
+
+interface ThumbProps{
+    url: string;
+}
+
+export const Thumb = styled.div<ThumbProps>`
+    background-image: url(${props => props.url});
+    background-size: contain;
+    background-repeat: no-repeat;
+`
