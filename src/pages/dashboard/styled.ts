@@ -61,6 +61,12 @@ export const Container = styled.div`
             flex-direction: row;
             padding: 14px;
             margin-top: 16px;
+            transition: 0.5s;
+            &:hover{
+                transform: translateX(20px);
+                
+            }
+            
 
             .detalhes{
                 display: flex;

@@ -16,6 +16,7 @@ interface RepositoryType{
     id: number;
     language: string;
     name: string;
+    full_name: string;
     description: string;
     url: string;
     updated_at: string;
@@ -60,8 +61,7 @@ const Dashboard:React.FC = () => {
 
         try{
             const response = await api.get<RepositoryType>(`repos/${owner}/${repo}`)
-
-
+            console.log(response);
             const existe = repositories.some((item) => {
                 return item.name === response.data.name;
             });
@@ -70,7 +70,7 @@ const Dashboard:React.FC = () => {
                 return;
             }
 
-            const list =  [...repositories,response.data];
+            const list = [...repositories,response.data];
             setRepo(list);
         }catch(err){
             setError('erro ao buscar esse repositório');
@@ -122,7 +122,7 @@ const Dashboard:React.FC = () => {
                             </p>
                         </div>
 
-                        <Link to="/user">
+                        <Link to={`user/${repository.full_name}`}>
                              <FiChevronRight size={ 20 } color="#C9C9D4"></FiChevronRight>
                         </Link>
                     </div>

@@ -30,6 +30,8 @@ export default createGlobalStyle`
 
     a{
         text-decoration: none;
+        color: #A8A8B3;
+        font-weight: bold;
     }
 
     button{

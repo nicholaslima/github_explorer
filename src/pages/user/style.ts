@@ -59,6 +59,12 @@ export const Container = styled.div`
             justify-content: space-between;
             align-items: center;
             margin-bottom: 16px;
+            transition: 0.5s;
+            
+            &:hover{
+                transform: translateX(20px);
+            }
+
             .subtitulo{
                 margin-bottom: 8px;
             }
@@ -74,14 +80,22 @@ export const Container = styled.div`
     .description{
         color: #6C6C80;
         font-size: 20px;
+        margin-top: 12px;
     }
-
-    .thumb{
-        width: 162px;
-        height: 152px;
-        border-radius: 50%;
-        background-color: #6C6C80;
-    }
-
-]
 `;
+
+interface ThumbProps{
+    url: string;
+}
+
+export const Thumb = styled.div<ThumbProps>`
+    width: 162px;
+    height: 152px;
+    border-radius: 50%;
+    margin-right: 40px;
+
+    background-image: url(${ props => props.url });
+    background-size: contain;
+    background-repeat: no-repeat;
+`;
+
