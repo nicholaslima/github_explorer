@@ -9,16 +9,8 @@ export const Container = styled.div`
     header{
         height: 496px;
 
-        .nameProject{ 
-            font-weight: 500;
-            font-size: 24px;
-            color: #737380;
-
+        .logo{ 
             padding-top: 42px;
-            strong{ 
-               font-weight: 600;
-               color: #737380;
-            }
         }
 
 
@@ -111,4 +103,14 @@ export const Thumb = styled.div<ThumbProps>`
     background-image: url(${props => props.url});
     background-size: contain;
     background-repeat: no-repeat;
+`;
+
+
+export const  Error = styled.div` 
+    color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #e01e37;
+    padding: 16px;
+    width: 714px;
 `

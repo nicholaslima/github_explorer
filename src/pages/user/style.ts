@@ -83,13 +83,5 @@ export const Container = styled.div`
         background-color: #6C6C80;
     }
 
-    .tituloProject{
-        color: #737380;
-        font-weight: 500;
-        font-size: 24px;
-
-        strong{
-            font-weight: 700;
-        }
-    }
+]
 `;

@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from './style';
 import { FiChevronLeft ,FiChevronRight} from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import Logo from '../../assets/Logo.svg';
 
 const User:React.FC = () => {
     return(
@@ -10,7 +11,7 @@ const User:React.FC = () => {
                     <header>
                         <div className="divLogo">
                             <div className="logo"></div>
-                            <p className="tituloProject"><strong>Github_</strong>explorer</p>
+                            <img src={ Logo } alt= "logo"></img>                           
                         </div>
                         <p className="description">
                             <Link to="/">
