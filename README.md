@@ -1,7 +1,7 @@
 <img src="https://img.shields.io/static/v1?label=log&message=githubexplorer&color=7159c1&style=for-the-badge&logo=ghost"/>
 
 <p align="center">
-    Acesse https://smartextapp.netlify.app/
+    Acesse https://github-explorer-ncl.netlify.app
 </p>
 
 <h1 align="center">Github Explorer</h1>
